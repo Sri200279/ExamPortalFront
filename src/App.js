@@ -115,12 +115,6 @@ const questionsbysubject = {
       Question: "Read file line by line?",
       Options: ["FileReader", "BufferedReader", "Scanner", "ObjectInputStream"],
     },
-    {
-  id: 16,
-  Question: "What is the value of a[3] as the result of the following array declaration?\nint[] a = {1, 2, 3, 4};",
-  Options: ["1", "2", "3", "4"],
-  Answer: "4"
-},
 {
   id: 17,
   Question: "Which of the following are primitive types?",
@@ -865,7 +859,7 @@ export default function App() {
                                             13: "ABAB",
                                             14: "Constructor name must be same as class name",
                                             15: "Both A and C",
-                                            16: ["BufferedReader", "4"],
+                                            16: "BufferedReader",
                                             17: "byte",
                                             18: "byte, short, int, long, float, double, boolean, char",
                                             19: "executeQuery()",
@@ -1051,3 +1045,4 @@ export default function App() {
        
 
 }
+
