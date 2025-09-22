@@ -7,6 +7,217 @@ import DisplayResult from "./components/DisplayResult";
 import Label from "./components/Label";
 
 const questionsbysubject = {
+   java: [
+    {
+      id: 1,
+      Question: "In BorderLayout,how many region can we add components into?",
+      Options: ["3", "4", "5", "Unlimited"],
+    },
+    {
+      id: 2,
+      Question: "Which SQL clause is used to filter records?",
+      Options: ["WHERE", "ORDERBY", "GROUPBY", "HAVING"],
+    },
+    {
+      id: 3,
+      Question: "Loop output?" +
+      "for(int i=1;i<=5;i++)"+
+      "{ if(i==3) break;"+
+      "System.out.print(i); }",
+      Options: ["12345", "12", "123", "1245"],
+    },
+    {
+      id: 4,
+      Question: "Inheritance field output?"+
+      "class A{int x=10;}"+"class B extends A{int x=20;"+
+      "void print(){System.out.println(super.x+' '+x);}"+
+      "public static void main(String[] a){ new B().print(); }}",
+      Options: ["10 20", "30 10", "20 10", "20 20"],
+    },
+    {
+      id: 5,
+      Question: "String pool check? "+`String s1="hello", s2="hello", s3=new String("hello");`+
+        `System.out.println((s1==s2)+" "+(s1==s3));`,
+      Options: ["true false", "false true", "false false", "true true"],
+    },
+    {
+  id: 6,
+  Question: "What will be the output?\nint x = 10;\nint y = 20;\nSystem.out.println(x++ + ++y);",
+  Options: ["30", "31", "32", "33"],
+},
+
+{
+  id: 7,
+  Question: "String pool check?\nString s1 = \"hello\", s2 = \"hello\", s3 = new String(\"hello\");\nSystem.out.println((s1==s2)+\" \"+(s1==s3));",
+  Options: ["true false", "false true", "false false", "true true"],
+},
+
+{
+  id: 8,
+  Question: "What is the default value of a boolean variable in Java?",
+  Options: ["true", "false", "null", "0"],
+},
+
+{
+  id: 9,
+  Question: "Which keyword is used to inherit a class in Java?",
+  Options: ["this", "super", "extends", "implements"],
+},
+
+{
+  id: 10,
+  Question: "Which of these is not a Java feature?",
+  Options: ["Object-Oriented", "Use of Pointers", "Portable", "Robust"],
+},
+
+{
+  id: 11,
+  Question: "What will be the output?\nSystem.out.println(10 + 20 + \"Java\");",
+  Options: ["30Java", "Java30", "1020Java", "Java1020"],
+},
+
+{
+  id: 12,
+  Question: "Which of the following is not a valid access modifier in Java?",
+  Options: ["public", "private", "protected", "friendly"],
+},
+
+{
+  id: 13,
+  Question: "What will be the output?\nSystem.out.println(\"A\" + \"B\" + 'A' + 'B');",
+  Options: ["ABAB", "ABA66", "AB131", "ABAB131"],
+},
+
+{
+  id: 14,
+  Question: "Which of the following is true about constructors in Java?",
+  Options: [
+    "Constructor must have return type",
+    "Constructor name must be same as class name",
+    "Constructor cannot be overloaded",
+    "Constructor is inherited by subclasses"
+  ],
+},
+
+{
+  id: 15,
+  Question: "Which of these is the correct way to declare a main method in Java?",
+  Options: [
+    "public static void main(String args[])",
+    "public void main(String args[])",
+    "static public void main(String[] args)",
+    "Both A and C"
+  ],
+},
+
+    {
+      id: 16,
+      Question: "Read file line by line?",
+      Options: ["FileReader", "BufferedReader", "Scanner", "ObjectInputStream"],
+    },
+    {
+  id: 16,
+  Question: "What is the value of a[3] as the result of the following array declaration?\nint[] a = {1, 2, 3, 4};",
+  Options: ["1", "2", "3", "4"],
+  Answer: "4"
+},
+{
+  id: 17,
+  Question: "Which of the following are primitive types?",
+  Options: ["byte", "String", "integer", "Float"],
+},
+{
+  id: 18,
+  Question: "What are primitive data types in Java?",
+  Options: [
+    "int, float, String, double",
+    "byte, short, int, long, float, double, boolean, char",
+    "int, long, String, char",
+    "Only int and float"
+  ],
+},
+
+{
+  id: 19,
+  Question: "Which method is used to execute a SQL query that returns a ResultSet in JDBC?",
+  Options: ["executeUpdate()", "executeQuery()", "execute()", "executeResult()"],
+},
+
+{
+  id: 20,
+  Question: "Which of these is NOT a valid type of JDBC driver?",
+  Options: [
+    "JDBC-ODBC Bridge driver",
+    "Native-API driver",
+    "Network Protocol driver",
+    "JDBC-Python Bridge driver"
+  ],
+},
+
+{
+  id: 21,
+  Question: "Which JDBC interface is used for precompiled SQL statements?",
+  Options: ["Statement", "PreparedStatement", "CallableStatement", "ResultSet"],
+},
+
+{
+  id: 22,
+  Question: "What will be the output?\nArrayList<String> list = new ArrayList<>();\nlist.add(\"A\"); list.add(\"B\"); list.add(1, \"C\");\nSystem.out.println(list);",
+  Options: ["[A, B, C]", "[A, C, B]", "[C, A, B]", "[B, A, C]"],
+},
+
+{
+  id: 23,
+  Question: "Which of these is correct about ArrayList in Java?",
+  Options: [
+    "It is synchronized",
+    "It allows duplicate elements",
+    "It does not allow null values",
+    "It has a fixed size"
+  ],
+},
+{
+  id: 24,
+  Question: "What will be the output?\nArrayList<Integer> list = new ArrayList<>();\nlist.add(1);\nlist.add(2);\nlist.remove(1);\nSystem.out.println(list);",
+  Options: ["[2]", "[1]", "[ ]", "[1, 2]"],
+},
+
+{
+  id: 25,
+  Question: "Which class is used to create a client socket connection in java.net?",
+  Options: ["ServerSocket", "Socket", "DatagramSocket", "InetAddress"],
+},
+
+{
+  id: 26,
+  Question: "Which java.net class is used to represent an IP address?",
+  Options: ["InetAddress", "URL", "SocketAddress", "URI"],
+},
+
+{
+  id: 27,
+  Question: "Which protocol is supported by the URL class in java.net by default?",
+  Options: ["ftp", "http", "https", "smtp"],
+},
+
+{
+  id: 28,
+  Question: "Which method of URLConnection is used to open a connection for reading?",
+  Options: ["getStream()", "openStream()", "getInputStream()", "read()"],
+},
+
+{
+  id: 29,
+  Question: "Which method of Socket class returns the OutputStream to send data?",
+  Options: ["getOutputStream()", "openOutput()", "sendStream()", "write()"],
+},
+{
+  id: 30,
+  Question: "Which class is used to bind a ServerSocket to a specific port?",
+  Options: ["Socket", "DatagramSocket", "ServerSocket", "InetAddress"],
+},
+  ],
+  
   hardware: [
     {
       id: 1,
@@ -638,6 +849,39 @@ export default function App() {
         }
         else{
            const correctanswers = {
+                                    java: {
+                                            1: "5",
+                                            2: "WHERE",
+                                            3: "12",
+                                            4: "10 20",
+                                            5: "true false",
+                                            6: "31",
+                                            7: "true false",
+                                            8: "false",
+                                            9: "extends",
+                                            10: "Use of Pointers",
+                                            11: "30Java",
+                                            12: "friendly",
+                                            13: "ABAB",
+                                            14: "Constructor name must be same as class name",
+                                            15: "Both A and C",
+                                            16: ["BufferedReader", "4"],
+                                            17: "byte",
+                                            18: "byte, short, int, long, float, double, boolean, char",
+                                            19: "executeQuery()",
+                                            20: "JDBC-Python Bridge driver",
+                                            21: "PreparedStatement",
+                                            22: "[A, C, B]",
+                                            23: "It allows duplicate elements",
+                                            24: "[1]",
+                                            25: "Socket",
+                                            26: "InetAddress",
+                                            27: "http",
+                                            28: "getInputStream()",
+                                            29: "getOutputStream()",
+                                            30: "ServerSocket"
+                                        },
+
                                     hardware: {
                                         1: "CPU",
                                         2: "Hard Disk Drive",
@@ -805,4 +1049,5 @@ export default function App() {
 
     );
        
+
 }
