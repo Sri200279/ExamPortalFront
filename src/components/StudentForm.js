@@ -19,7 +19,8 @@ function StudentForm({ onSubmit, onViewResults }) {
       <input className='rollno' name="rollno" placeholder='Roll No' onChange={handleChange} required />
       <select className='subject' name="subject" onChange={handleChange} required>
         <option value="">Select Subject</option>
-        <option value="mern">Mern</option>
+        <option value="React">React</option>
+        <option value="Node">Node</option>
         <option value="photoshop">Photoshop</option>
         <option value="hardware">Hardware</option>
         <option value="networking">Networking</option>
@@ -41,3 +42,4 @@ function StudentForm({ onSubmit, onViewResults }) {
 }
 
 export default StudentForm;
+
