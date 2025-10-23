@@ -7,6 +7,109 @@ import DisplayResult from "./components/DisplayResult";
 import Label from "./components/Label";
 
 const questionsbysubject = {
+  React: [
+  {
+    id: 1,
+    Question: "What is React primarily used for?",
+    Options: ["Database management", "Building user interfaces", "Server-side scripting", "File handling"],
+  },
+  {
+    id: 2,
+    Question: "Who developed React?",
+    Options: ["Google", "Facebook", "Twitter", "Microsoft"],
+  },
+  {
+    id: 3,
+    Question: "In React, what is JSX?",
+    Options: ["A JavaScript XML syntax extension", "A JSON parser", "A templating engine", "A type of component"],
+  },
+  {
+    id: 4,
+    Question: "Which method is used to render React components to the DOM?",
+    Options: ["renderComponent()", "ReactDOM.render()", "mount()", "display()"],
+  },
+  {
+    id: 5,
+    Question: "What is a state in React?",
+    Options: ["Permanent storage", "A built-in database", "An object that holds component data", "A type of CSS property"],
+  },
+  {
+    id: 6,
+    Question: "Which hook is used for managing state in functional components?",
+    Options: ["useEffect()", "useState()", "useReducer()", "useContext()"],
+  },
+  {
+    id: 7,
+    Question: "What is the purpose of useEffect() in React?",
+    Options: ["To handle side effects in components", "To define initial state", "To import CSS files", "To create new components"],
+  },
+  {
+    id: 8,
+    Question: "What does Virtual DOM do?",
+    Options: ["Updates the entire DOM", "Improves performance by updating only changed parts", "Acts as a real browser DOM", "Handles API requests"],
+  },
+  {
+    id: 9,
+    Question: "Which of the following is true about props?",
+    Options: ["Props are mutable", "Props can only be passed to class components", "Props are read-only", "Props store component state"],
+  },
+  {
+    id: 10,
+    Question: "What is the default port number for a React app?",
+    Options: ["3000", "8080", "5000", "8000"],
+  },
+  {
+    id: 11,
+    Question: "How do you create a React app using Create React App?",
+    Options: ["npm install react-app", "npx create-react-app appname", "npm start react", "node react new app"],
+  },
+  {
+    id: 12,
+    Question: "What is the significance of keys in React lists?",
+    Options: ["They define the order of rendering", "They help identify unique list items for efficient re-rendering", "They are used for styling lists", "They act as event handlers"],
+  },
+  {
+    id: 13,
+    Question: "Which of the following is NOT a React hook?",
+    Options: ["useMemo()", "useEffect()", "useClass()", "useRef()"],
+  },
+  {
+    id: 14,
+    Question: "What is the correct syntax to import React in a file?",
+    Options: ["import React from 'react'", "include React from 'react'", "require('React')", "React = import 'react'"],
+  },
+  {
+    id: 15,
+    Question: "What will happen if you update state directly in React?",
+    Options: ["It will work fine", "Component will re-render correctly", "React will throw an error or not re-render properly", "Nothing happens"],
+  },
+  {
+    id: 16,
+    Question: "Which function is used to update state in class components?",
+    Options: ["setState()", "updateState()", "useState()", "changeState()"],
+  },
+  {
+    id: 17,
+    Question: "What does the useRef() hook do?",
+    Options: ["Creates a new component", "Returns a mutable ref object to persist values", "Returns an immutable value", "Triggers re-render"],
+  },
+  {
+    id: 18,
+    Question: "React components must return:",
+    Options: ["Only one root element", "Multiple root elements", "A string", "Nothing"],
+  },
+  {
+    id: 19,
+    Question: "What is React Router used for?",
+    Options: ["Managing API requests", "Navigation between views or pages", "Handling events", "Styling components"],
+  },
+  {
+    id: 20,
+    Question: "Which command starts a React development server?",
+    Options: ["npm build", "npm start", "npm run serve", "npm compile"],
+  }
+],
+
    java: [
     {
       id: 1,
@@ -972,6 +1075,29 @@ export default function App() {
                                         29: "Secure",
                                         30: "ping",
                                     },
+                                    React:{
+  1: "Building user interfaces",
+  2: "Facebook",
+  3: "A JavaScript XML syntax extension",
+  4: "ReactDOM.render()",
+  5: "An object that holds component data",
+  6: "useState()",
+  7: "To handle side effects in components",
+  8: "Improves performance by updating only changed parts",
+  9: "Props are read-only",
+  10: "3000",
+  11: "npx create-react-app appname",
+  12: "They help identify unique list items for efficient re-rendering",
+  13: "useClass()",
+  14: "import React from 'react'",
+  15: "React will throw an error or not re-render properly",
+  16: "setState()",
+  17: "Returns a mutable ref object to persist values",
+  18: "Only one root element",
+  19: "Navigation between views or pages",
+  20: "npm start"
+}
+
                                     photoshop: {
                                         1: "CMYK",
                                         2: ".psd",
@@ -1045,5 +1171,6 @@ export default function App() {
        
 
 }
+
 
 
