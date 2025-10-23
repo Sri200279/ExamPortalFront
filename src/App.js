@@ -7,6 +7,109 @@ import DisplayResult from "./components/DisplayResult";
 import Label from "./components/Label";
 
 const questionsbysubject = {
+  Node:[
+  {
+    id: 1,
+    Question: "What is Node.js primarily used for?",
+    Options: ["Front-end development", "Database management", "Server-side scripting", "Graphic design"],
+  },
+  {
+    id: 2,
+    Question: "Who developed Node.js?",
+    Options: ["Microsoft", "Facebook", "Ryan Dahl", "Google"],
+  },
+  {
+    id: 3,
+    Question: "Which JavaScript engine powers Node.js?",
+    Options: ["SpiderMonkey", "V8", "JavaScriptCore", "Chakra"],
+  },
+  {
+    id: 4,
+    Question: "Which module is used to create a web server in Node.js?",
+    Options: ["fs", "http", "net", "url"],
+  },
+  {
+    id: 5,
+    Question: "What command is used to initialize a Node.js project?",
+    Options: ["node init", "npm install", "npm init", "node start"],
+  },
+  {
+    id: 6,
+    Question: "Which file is created by running 'npm init'?",
+    Options: ["server.js", "index.html", "package.json", "node.config"],
+  },
+  {
+    id: 7,
+    Question: "Which of the following is a core module in Node.js?",
+    Options: ["express", "http", "mongoose", "react"],
+  },
+  {
+    id: 8,
+    Question: "Which keyword is used to import a module in Node.js?",
+    Options: ["import", "require", "include", "use"],
+  },
+  {
+    id: 9,
+    Question: "Which method is used to read files asynchronously in Node.js?",
+    Options: ["fs.readFile()", "fs.read()", "fs.getFile()", "fs.open()"],
+  },
+  {
+    id: 10,
+    Question: "What is the default scope of variables in Node.js modules?",
+    Options: ["Global", "Local to the module", "Private", "Public"],
+  },
+  {
+    id: 11,
+    Question: "Which object is used to handle events in Node.js?",
+    Options: ["EventEmitter", "EventHandler", "Emitter", "Listener"],
+  },
+  {
+    id: 12,
+    Question: "What is the command to install a package globally in Node.js?",
+    Options: ["npm install package", "npm install -g package", "npm add package", "npm get package"],
+  },
+  {
+    id: 13,
+    Question: "Which method is used to send data back to the client in an HTTP server?",
+    Options: ["response.write()", "response.send()", "response.output()", "response.end()"],
+  },
+  {
+    id: 14,
+    Question: "Which module is used to work with file and directory paths?",
+    Options: ["path", "os", "fs", "url"],
+  },
+  {
+    id: 15,
+    Question: "What does the 'os' module provide in Node.js?",
+    Options: ["Operating system-related utilities", "Database connections", "Web framework", "Security features"],
+  },
+  {
+    id: 16,
+    Question: "How do you start a Node.js application?",
+    Options: ["npm start", "node start", "node app.js", "run node"],
+  },
+  {
+    id: 17,
+    Question: "Which statement about Node.js is TRUE?",
+    Options: ["It is single-threaded and non-blocking", "It is multi-threaded", "It cannot handle I/O operations", "It runs only in browsers"],
+  },
+  {
+    id: 18,
+    Question: "Which of the following frameworks is built on top of Node.js?",
+    Options: ["Laravel", "Spring", "Express", "Django"],
+  },
+  {
+    id: 19,
+    Question: "Which command is used to uninstall a package in Node.js?",
+    Options: ["npm remove package", "npm delete package", "npm uninstall package", "npm clear package"],
+  },
+  {
+    id: 20,
+    Question: "Which of the following best describes npm?",
+    Options: ["Node Project Manager", "Node Package Manager", "Network Package Module", "New Programming Model"],
+  }
+],
+
   React: [
   {
     id: 1,
@@ -1096,7 +1199,30 @@ export default function App() {
   18: "Only one root element",
   19: "Navigation between views or pages",
   20: "npm start"
-}
+},
+             {
+  1: "Server-side scripting",
+  2: "Ryan Dahl",
+  3: "V8",
+  4: "http",
+  5: "npm init",
+  6: "package.json",
+  7: "http",
+  8: "require",
+  9: "fs.readFile()",
+  10: "Local to the module",
+  11: "EventEmitter",
+  12: "npm install -g package",
+  13: "response.write()",
+  14: "path",
+  15: "Operating system-related utilities",
+  16: "node app.js",
+  17: "It is single-threaded and non-blocking",
+  18: "Express",
+  19: "npm uninstall package",
+  20: "Node Package Manager"
+},
+
 
                                     photoshop: {
                                         1: "CMYK",
@@ -1171,6 +1297,7 @@ export default function App() {
        
 
 }
+
 
 
 
