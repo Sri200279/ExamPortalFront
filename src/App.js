@@ -7,6 +7,130 @@ import DisplayResult from "./components/DisplayResult";
 import Label from "./components/Label";
 
 const questionsbysubject = {
+  MongoDB: [
+  {
+    id: 1,
+    Question: "MongoDB is a type of which database?",
+    Options: ["Relational Database", "Key-Value Store", "Document-Oriented Database", "Graph Database"],
+    
+  },
+  {
+    id: 2,
+    Question: "Which format does MongoDB use to store data?",
+    Options: ["XML", "JSON", "BSON", "CSV"],
+    
+  },
+  {
+    id: 3,
+    Question: "What is the default port used by MongoDB?",
+    Options: ["27015", "27017", "28017", "27007"],
+    
+  },
+  {
+    id: 4,
+    Question: "In MongoDB, a collection is analogous to what in a relational database?",
+    Options: ["Row", "Table", "Column", "Schema"],
+    
+  },
+  {
+    id: 5,
+    Question: "The command to show all databases in MongoDB shell is:",
+    Options: ["show db", "display dbs", "show databases", "list databases"],
+    
+  },
+  {
+    id: 6,
+    Question: "Which command switches to a specific database in MongoDB?",
+    Options: ["use database_name", "select database_name", "db.use(database_name)", "switch database_name"],
+    
+  },
+  {
+    id: 7,
+    Question: "Each document in MongoDB must contain a unique identifier called:",
+    Options: ["_docid", "docID", "_id", "primaryKey"],
+    
+  },
+  {
+    id: 8,
+    Question: "Which of the following is not a valid MongoDB data type?",
+    Options: ["String", "Date", "Integer", "Float64"],
+    
+  },
+  {
+    id: 9,
+    Question: "The command to insert a single document into a collection is:",
+    Options: ["db.collection.addOne()", "db.collection.insertOne()", "db.collection.push()", "db.collection.save()"],
+    
+  },
+  {
+    id: 10,
+    Question: "To retrieve all documents from a collection, you use:",
+    Options: ["db.collection.findAll()", "db.collection.get()", "db.collection.find()", "db.collection.show()"],
+    
+  },
+  {
+    id: 11,
+    Question: "To update a document in MongoDB, you can use:",
+    Options: ["update()", "modify()", "change()", "edit()"],
+    
+  },
+  {
+    id: 12,
+    Question: "Which operator is used for pattern matching in MongoDB queries?",
+    Options: ["$regex", "$match", "$like", "$pattern"],
+    
+  },
+  {
+    id: 13,
+    Question: "Indexes in MongoDB improve:",
+    Options: ["Security", "Query Performance", "Storage", "Data Consistency"],
+    
+  },
+  {
+    id: 14,
+    Question: "Which of the following is used for aggregation in MongoDB?",
+    Options: ["$aggregate", "$groupBy", "aggregate()", "$sum()"],
+    
+  },
+  {
+    id: 15,
+    Question: "Replica sets in MongoDB provide:",
+    Options: ["Sharding", "Load Balancing", "Data Redundancy and High Availability", "Authentication"],
+    
+  },
+  {
+    id: 16,
+    Question: "What is sharding in MongoDB?",
+    Options: ["Data Encryption", "Data Backup", "Horizontal Data Partitioning", "Data Compression"],
+    
+  },
+  {
+    id: 17,
+    Question: "Which of the following is true about MongoDB schema?",
+    Options: ["Schema is fixed", "Schema is dynamic", "Schema is pre-defined", "Schema must be declared in JSON"],
+    
+  },
+  {
+    id: 18,
+    Question: "The $group stage in aggregation is used to:",
+    Options: ["Filter documents", "Group documents by a specified key", "Sort documents", "Limit output"],
+    
+  },
+  {
+    id: 19,
+    Question: "The default write concern in MongoDB is:",
+    Options: ["w: 0", "w: 1", "w: 2", "w: majority"],
+    
+  },
+  {
+    id: 20,
+    Question: "The MongoDB command to drop a collection is:",
+    Options: ["db.dropCollection()", "db.collection.remove()", "db.collection.drop()", "drop collection"],
+    
+  },
+],
+
+  
   Node:[
   {
     id: 1,
@@ -1222,7 +1346,28 @@ export default function App() {
   19: "npm uninstall package",
   20: "Node Package Manager"
 },
-
+             MongoDB :{
+  1: "Document-Oriented Database",
+  2: "BSON",
+  3: "27017",
+  4: "Table",
+  5: "show databases",
+  6: "use database_name",
+  7: "_id",
+  8: "Float64",
+  9: "db.collection.insertOne()",
+  10: "db.collection.find()",
+  11: "update()",
+  12: "$regex",
+  13: "Query Performance",
+  14: "aggregate()",
+  15: "Data Redundancy and High Availability",
+  16: "Horizontal Data Partitioning",
+  17: "Schema is dynamic",
+  18: "Group documents by a specified key",
+  19: "w: 1",
+  20: "db.collection.drop()",
+},
 
                                     photoshop: {
                                         1: "CMYK",
@@ -1297,6 +1442,7 @@ export default function App() {
        
 
 }
+
 
 
 
