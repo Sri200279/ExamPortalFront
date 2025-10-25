@@ -21,6 +21,7 @@ function StudentForm({ onSubmit, onViewResults }) {
         <option value="">Select Subject</option>
         <option value="React">React</option>
         <option value="Node">Node</option>
+        <option value="MongoDB">MongoDB</option>
         <option value="photoshop">Photoshop</option>
         <option value="hardware">Hardware</option>
         <option value="networking">Networking</option>
@@ -42,4 +43,5 @@ function StudentForm({ onSubmit, onViewResults }) {
 }
 
 export default StudentForm;
+
 
